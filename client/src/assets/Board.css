@@ -1,0 +1,134 @@
+/* Board styles */
+.board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.hints-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    max-width: 400px;
+}
+
+.hints-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.hint-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
+    gap: 2px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hint-display {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    width: calc(100% - 40px);
+    height: 50px;
+    overflow: auto;
+}
+
+.board-header {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.board-header .timer {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.board-header .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.board-header button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.board-header button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .board-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .hints-container {
+        margin-left: 0;
+        max-width: 100%;
+        order: 2; /* Move below the board */
+    }
+
+    .hints-title {
+        font-size: 16px;
+    }
+
+    .hint-item {
+        font-size: 12px;
+    }
+
+    .board {
+        grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+        gap: 1px;
+    }
+
+    .hint-display {
+        font-size: 14px;
+        width: calc(100% - 20px);
+    }
+
+    .board-header .timer {
+        font-size: 14px;
+    }
+
+    .board-header .buttons {
+        gap: 5px;
+    }
+
+    .board-header button {
+        padding: 6px 10px;
+    }
+}

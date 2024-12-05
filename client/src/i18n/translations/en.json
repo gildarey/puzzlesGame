@@ -1,0 +1,25 @@
+{
+  "title": "PUZZLES",
+  "subtitle": "Why puzzles? That’s the puzzle!",
+  "config": {
+    "title": "Configuration",
+    "language": "Language",
+    "languages": {
+      "english": "English",
+      "spanish": "Spanish"
+    },
+    "theme": "Theme",
+    "themes": ["Light", "Dark"],
+    "difficulty": "Difficulty",
+    "difficulties": ["Easy", "Medium", "Hard"],
+    "topic": "Topic",
+    "topics": ["None", "Science", "History"]
+  },
+  "board": {
+    "time": "Time",
+    "reset": "Reset Board",
+    "revealLetter": "Reveal Letter",
+    "revealWord": "Reveal Word",
+    "revealSolution": "Reveal Solution"
+  }
+}

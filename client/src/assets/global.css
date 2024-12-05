@@ -1,0 +1,150 @@
+/* Global styles */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --button-background: #f0f0f0;
+    --button-text: #000000;
+    --input-background: #ffffff;
+    --input-text: #000000;
+}
+
+body.dark-theme {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --button-background: #333333;
+    --button-text: #ffffff;
+    --input-background: #333333;
+    --input-text: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* titles */
+.app-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: #222;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+.app-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 0.5em;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.5px;
+}
+
+/* Config component */
+.config-container {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.config-item label {
+    color: var(--text-color);
+}
+
+.config-item select {
+    background-color: var(--input-background);
+    color: var(--input-text);
+}
+
+/* Board component */
+.board-container {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.board-header {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.board-row {
+    background-color: var(--background-color);
+}
+
+.board-row .cell {
+    background-color: var(--input-background);
+    color: var(--input-text);
+}
+
+.hints-container {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.hint-item {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Buttons */
+button {
+    background-color: var(--button-background);
+    color: var(--button-text);
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .app-title {
+        font-size: 2rem;
+        margin-top: 15px;
+    }
+
+    .app-subtitle {
+        font-size: 1rem;
+        margin-top: 0.3em;
+    }
+
+    .config-container {
+        padding: 10px;
+    }
+
+    .config-item {
+        margin-bottom: 10px;
+    }
+
+    .board-container {
+        padding: 10px;
+    }
+
+    .board-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timer, .buttons {
+        margin-bottom: 10px;
+    }
+
+    .board {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+        gap: 5px;
+    }
+
+    .board-row {
+        display: contents;
+    }
+
+    .hints-container {
+        padding: 10px;
+    }
+
+    .hint-display, .hints-title, .hint-item {
+        text-align: center;
+    }
+}
