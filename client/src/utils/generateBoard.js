@@ -5,20 +5,18 @@ export const generateBoard = async (language, difficulty, topic) => {
 
     console.log(`Generating board with language: ${language}, difficulty: ${difficulty}, topic: ${topic}........`);
 
-    let promptTopic = topic === 'None' || topic === 'Ninguno' ? 'Random' : topic;
-
     // Define board dimensions and density based on difficulty
     let boardDimensions;
     let density;
 
     if (difficulty === 1) { // Easy
-        boardDimensions = {rows: 8, cols: 8};
+        boardDimensions = {rows: 6, cols: 10};
         density = 0.4; // 40%
     } else if (difficulty === 2) { // Medium
         boardDimensions = {rows: 10, cols: 10};
         density = 0.5; // 50%
     } else if (difficulty === 3) { // Hard
-        boardDimensions = {rows: 12, cols: 12};
+        boardDimensions = {rows: 10, cols: 12};
         density = 0.6; // 60%
     } else {
         // Default to medium difficulty
@@ -57,35 +55,38 @@ export const generateBoard = async (language, difficulty, topic) => {
         console.error('Error fetching words from backend:', error);
     }
 
-try {
-    // Make a GET request to the backend to fetch words
-    const response = await axios.get(`${apiURL}/api/getWords`, {});
+    try {
+        // Make a GET request to the backend to fetch words
+        const response = await axios.get(`${apiURL}/api/getWords`, {
+            params: {
+                topic: topic,
+                difficulty: difficulty,
+                language: language
+            }
+        });
 
-    const generatedWords = response.data || {};
-    const keys = Object.keys(generatedWords);
-    if (keys.length === 0) {
-        throw new Error('No words returned from backend');
+        const generatedWords = response.data || {};
+        const keys = Object.keys(generatedWords);
+        if (keys.length === 0) {
+            throw new Error('No words returned from backend');
+        }
+        // Select a random key
+        const randomKey = keys[Math.floor(Math.random() * keys.length)];
+        const wordsArray = generatedWords[randomKey];
+        if (wordsArray.length === 0) {
+            throw new Error('No words in the selected category');
+        }
+
+        const initialData = [];
+        for (const word of wordsArray) {
+            initialData.push(word);
+        }
+
+        // console.log('initialData:', initialData);
+        return {initialData, boardDimensions, density};
+
+    } catch (error) {
+        console.error('Error fetching words from backend:', error);
+        return {initialData: [], boardDimensions, density}; // Return an empty array or handle the error as needed
     }
-
-    console.log('keys.length:', keys.length);
-
-    // Select a random key
-    const randomKey = keys[Math.floor(Math.random() * keys.length)];
-    const wordsArray = generatedWords[randomKey];
-    if (wordsArray.length === 0) {
-        throw new Error('No words in the selected category');
-    }
-
-    const initialData = [];
-    for (const word of wordsArray) {
-        initialData.push(word);
-    }
-
-    console.log('initialData:', initialData);
-    return { initialData, boardDimensions, density };
-
-} catch (error) {
-    console.error('Error fetching words from backend:', error);
-    return { initialData: [], boardDimensions, density }; // Return an empty array or handle the error as needed
-}
 };

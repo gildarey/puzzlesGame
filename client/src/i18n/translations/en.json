@@ -9,11 +9,23 @@
       "spanish": "Spanish"
     },
     "theme": "Theme",
-    "themes": ["Light", "Dark"],
+    "themes": [
+      "Light",
+      "Dark"
+    ],
     "difficulty": "Difficulty",
-    "difficulties": ["Easy", "Medium", "Hard"],
+    "difficulties": {
+      "1": "Easy",
+      "2": "Medium",
+      "3": "Hard"
+    },
     "topic": "Topic",
-    "topics": ["None", "Science", "History"]
+    "topics": {
+      "random": "None",
+      "music": "Music",
+      "history": "History",
+      "science": "Science"
+    }
   },
   "board": {
     "time": "Time",
