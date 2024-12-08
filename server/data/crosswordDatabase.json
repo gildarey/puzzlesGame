@@ -1,0 +1,1062 @@
+{
+  "random": [
+    {
+      "difficulty": "1",
+      "language": "es",
+      "words": [
+        {
+          "word": "SOL",
+          "hint": "Estrella en el centro del sistema solar."
+        },
+        {
+          "word": "MAR",
+          "hint": "Gran masa de agua salada."
+        },
+        {
+          "word": "CASA",
+          "hint": "Lugar donde vive una familia."
+        },
+        {
+          "word": "FLOR",
+          "hint": "Parte colorida de una planta."
+        },
+        {
+          "word": "LIBRO",
+          "hint": "Conjunto de hojas escritas o impresas."
+        },
+        {
+          "word": "GATO",
+          "hint": "Animal doméstico conocido por su agilidad."
+        },
+        {
+          "word": "ORDEN",
+          "hint": "Disposición de las cosas en su lugar."
+        }
+      ]
+    },
+    {
+      "difficulty": "1",
+      "language": "en",
+      "words": [
+        {
+          "word": "SUN",
+          "hint": "Star at the center of the solar system."
+        },
+        {
+          "word": "SEA",
+          "hint": "Large body of saltwater."
+        },
+        {
+          "word": "HOME",
+          "hint": "Place where a family lives."
+        },
+        {
+          "word": "BOOK",
+          "hint": "Set of written or printed pages."
+        },
+        {
+          "word": "CAT",
+          "hint": "Domestic animal known for its agility."
+        },
+        {
+          "word": "RIVER",
+          "hint": "Natural flowing watercourse."
+        },
+        {
+          "word": "ORDER",
+          "hint": "Arrangement of things in their place."
+        }
+      ]
+    },
+    {
+      "difficulty": "2",
+      "language": "es",
+      "words": [
+        {
+          "word": "SOL",
+          "hint": "Estrella en el centro del sistema solar."
+        },
+        {
+          "word": "MAR",
+          "hint": "Gran masa de agua salada."
+        },
+        {
+          "word": "PAN",
+          "hint": "Alimento hecho de harina y agua."
+        },
+        {
+          "word": "CASA",
+          "hint": "Lugar donde vive una familia."
+        },
+        {
+          "word": "FLOR",
+          "hint": "Parte colorida de una planta."
+        },
+        {
+          "word": "LIBRO",
+          "hint": "Conjunto de hojas escritas o impresas."
+        },
+        {
+          "word": "GATO",
+          "hint": "Animal doméstico conocido por su agilidad."
+        },
+        {
+          "word": "RÍO",
+          "hint": "Corriente natural de agua."
+        },
+        {
+          "word": "MÚSICA",
+          "hint": "Arte de combinar sonidos."
+        },
+        {
+          "word": "ORDEN",
+          "hint": "Disposición de las cosas en su lugar."
+        },
+        {
+          "word": "ELEFANTE",
+          "hint": "Animal terrestre más grande."
+        },
+        {
+          "word": "HOSPITAL",
+          "hint": "Lugar donde se atienden enfermos."
+        },
+        {
+          "word": "TELEFONO",
+          "hint": "Dispositivo para comunicarse a distancia."
+        }
+      ]
+    },
+    {
+      "difficulty": "2",
+      "language": "en",
+      "words": [
+        {
+          "word": "SUN",
+          "hint": "Star at the center of the solar system."
+        },
+        {
+          "word": "SEA",
+          "hint": "Large body of saltwater."
+        },
+        {
+          "word": "PAN",
+          "hint": "Food made from flour and water."
+        },
+        {
+          "word": "HOME",
+          "hint": "Place where a family lives."
+        },
+        {
+          "word": "BOOK",
+          "hint": "Set of written or printed pages."
+        },
+        {
+          "word": "CAT",
+          "hint": "Domestic animal known for its agility."
+        },
+        {
+          "word": "RIVER",
+          "hint": "Natural flowing watercourse."
+        },
+        {
+          "word": "MUSIC",
+          "hint": "Art of combining sounds."
+        },
+        {
+          "word": "ORDER",
+          "hint": "Arrangement of things in their place."
+        },
+        {
+          "word": "ELEPHANT",
+          "hint": "Largest land animal."
+        },
+        {
+          "word": "HOSPITAL",
+          "hint": "Place where sick people are treated."
+        },
+        {
+          "word": "TELEPHONE",
+          "hint": "Device for distant communication."
+        }
+      ]
+    },
+    {
+      "difficulty": "3",
+      "language": "es",
+      "words": [
+        {
+          "word": "SOL",
+          "hint": "Estrella en el centro del sistema solar."
+        },
+        {
+          "word": "MAR",
+          "hint": "Gran masa de agua salada."
+        },
+        {
+          "word": "CASA",
+          "hint": "Lugar donde vive una familia."
+        },
+        {
+          "word": "FLOR",
+          "hint": "Parte colorida de una planta."
+        },
+        {
+          "word": "LIBRO",
+          "hint": "Conjunto de hojas escritas o impresas."
+        },
+        {
+          "word": "GATO",
+          "hint": "Animal doméstico conocido por su agilidad."
+        },
+        {
+          "word": "ORDEN",
+          "hint": "Disposición de las cosas en su lugar."
+        },
+        {
+          "word": "RÍO",
+          "hint": "Corriente natural de agua."
+        },
+        {
+          "word": "MÚSICA",
+          "hint": "Arte de combinar sonidos."
+        },
+        {
+          "word": "ELEFANTE",
+          "hint": "Animal terrestre más grande."
+        }
+      ]
+    },
+    {
+      "difficulty": "3",
+      "language": "en",
+      "words": [
+        {
+          "word": "SUN",
+          "hint": "Star at the center of the solar system."
+        },
+        {
+          "word": "SEA",
+          "hint": "Large body of saltwater."
+        },
+        {
+          "word": "HOME",
+          "hint": "Place where a family lives."
+        },
+        {
+          "word": "BOOK",
+          "hint": "Set of written or printed pages."
+        },
+        {
+          "word": "CAT",
+          "hint": "Domestic animal known for its agility."
+        },
+        {
+          "word": "RIVER",
+          "hint": "Natural flowing watercourse."
+        },
+        {
+          "word": "MUSIC",
+          "hint": "Art of combining sounds."
+        },
+        {
+          "word": "ORDER",
+          "hint": "Arrangement of things in their place."
+        },
+        {
+          "word": "ELEPHANT",
+          "hint": "Largest land animal."
+        },
+        {
+          "word": "HOSPITAL",
+          "hint": "Place where sick people are treated."
+        }
+      ]
+    }
+  ],
+  "music": [
+    {
+      "difficulty": "1",
+      "language": "es",
+      "words": [
+        {
+          "word": "DO",
+          "hint": "Primera nota musical en el sistema tonal."
+        },
+        {
+          "word": "MI",
+          "hint": "Tercera nota musical del sistema tonal."
+        },
+        {
+          "word": "FA",
+          "hint": "Cuarta nota musical en el sistema tonal."
+        },
+        {
+          "word": "VIOLÍN",
+          "hint": "Instrumento de cuerda frotada."
+        },
+        {
+          "word": "PIANO",
+          "hint": "Instrumento de teclado con cuerdas percutidas."
+        },
+        {
+          "word": "CANTANTE",
+          "hint": "Persona que usa la voz como instrumento musical."
+        }
+      ]
+    },
+    {
+      "difficulty": "1",
+      "language": "en",
+      "words": [
+        {
+          "word": "DO",
+          "hint": "First note in the tonal system."
+        },
+        {
+          "word": "MI",
+          "hint": "Third note in the tonal system."
+        },
+        {
+          "word": "FA",
+          "hint": "Fourth note in the tonal system."
+        },
+        {
+          "word": "VIOLIN",
+          "hint": "A bowed string instrument."
+        },
+        {
+          "word": "PIANO",
+          "hint": "A keyboard instrument with struck strings."
+        },
+        {
+          "word": "SINGER",
+          "hint": "A person who uses their voice as an instrument."
+        }
+      ]
+    },
+    {
+      "difficulty": "2",
+      "language": "es",
+      "words": [
+        {
+          "word": "DO",
+          "hint": "Primera nota musical en el sistema tonal."
+        },
+        {
+          "word": "MI",
+          "hint": "Tercera nota musical del sistema tonal."
+        },
+        {
+          "word": "FA",
+          "hint": "Cuarta nota musical en el sistema tonal."
+        },
+        {
+          "word": "VIOLÍN",
+          "hint": "Instrumento de cuerda frotada."
+        },
+        {
+          "word": "PIANO",
+          "hint": "Instrumento de teclado con cuerdas percutidas."
+        },
+        {
+          "word": "CANTANTE",
+          "hint": "Persona que usa la voz como instrumento musical."
+        },
+        {
+          "word": "BATERÍA",
+          "hint": "Conjunto de tambores y platillos."
+        },
+        {
+          "word": "SINFONÍA",
+          "hint": "Composición musical para orquesta."
+        }
+      ]
+    },
+    {
+      "difficulty": "2",
+      "language": "en",
+      "words": [
+        {
+          "word": "DO",
+          "hint": "First note in the tonal system."
+        },
+        {
+          "word": "MI",
+          "hint": "Third note in the tonal system."
+        },
+        {
+          "word": "FA",
+          "hint": "Fourth note in the tonal system."
+        },
+        {
+          "word": "VIOLIN",
+          "hint": "A bowed string instrument."
+        },
+        {
+          "word": "PIANO",
+          "hint": "A keyboard instrument with struck strings."
+        },
+        {
+          "word": "SINGER",
+          "hint": "A person who uses their voice as an instrument."
+        },
+        {
+          "word": "DRUMS",
+          "hint": "A set of percussion instruments."
+        },
+        {
+          "word": "SYMPHONY",
+          "hint": "A musical composition for orchestra."
+        }
+      ]
+    },
+    {
+      "difficulty": "3",
+      "language": "es",
+      "words": [
+        {
+          "word": "DO",
+          "hint": "Primera nota musical en el sistema tonal."
+        },
+        {
+          "word": "MI",
+          "hint": "Tercera nota musical del sistema tonal."
+        },
+        {
+          "word": "FA",
+          "hint": "Cuarta nota musical en el sistema tonal."
+        },
+        {
+          "word": "VIOLÍN",
+          "hint": "Instrumento de cuerda frotada."
+        },
+        {
+          "word": "PIANO",
+          "hint": "Instrumento de teclado con cuerdas percutidas."
+        },
+        {
+          "word": "CANTANTE",
+          "hint": "Persona que usa la voz como instrumento musical."
+        },
+        {
+          "word": "BATERÍA",
+          "hint": "Conjunto de tambores y platillos."
+        },
+        {
+          "word": "SINFONÍA",
+          "hint": "Composición musical para orquesta."
+        },
+        {
+          "word": "CONCIERTO",
+          "hint": "Evento musical en vivo."
+        },
+        {
+          "word": "DIRECTOR",
+          "hint": "Persona que dirige una orquesta."
+        }
+      ]
+    },
+    {
+      "difficulty": "3",
+      "language": "en",
+      "words": [
+        {
+          "word": "DO",
+          "hint": "First note in the tonal system."
+        },
+        {
+          "word": "MI",
+          "hint": "Third note in the tonal system."
+        },
+        {
+          "word": "FA",
+          "hint": "Fourth note in the tonal system."
+        },
+        {
+          "word": "VIOLIN",
+          "hint": "A bowed string instrument."
+        },
+        {
+          "word": "PIANO",
+          "hint": "A keyboard instrument with struck strings."
+        },
+        {
+          "word": "SINGER",
+          "hint": "A person who uses their voice as an instrument."
+        },
+        {
+          "word": "DRUMS",
+          "hint": "A set of percussion instruments."
+        },
+        {
+          "word": "SYMPHONY",
+          "hint": "A musical composition for orchestra."
+        },
+        {
+          "word": "CONCERT",
+          "hint": "A live musical performance."
+        },
+        {
+          "word": "CONDUCTOR",
+          "hint": "Person who directs an orchestra."
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "difficulty": "1",
+      "language": "es",
+      "words": [
+        {
+          "word": "REY",
+          "hint": "Monarca de un reino."
+        },
+        {
+          "word": "PAZ",
+          "hint": "Ausencia de guerra."
+        },
+        {
+          "word": "GUERRA",
+          "hint": "Conflicto armado entre países."
+        },
+        {
+          "word": "ROMA",
+          "hint": "Capital del antiguo Imperio Romano."
+        },
+        {
+          "word": "REINA",
+          "hint": "Monarca femenina."
+        },
+        {
+          "word": "CASTILLO",
+          "hint": "Fortaleza medieval."
+        },
+        {
+          "word": "HISTORIA",
+          "hint": "Estudio del pasado."
+        }
+      ]
+    },
+    {
+      "difficulty": "1",
+      "language": "en",
+      "words": [
+        {
+          "word": "KING",
+          "hint": "Monarch of a kingdom."
+        },
+        {
+          "word": "PEACE",
+          "hint": "Absence of war."
+        },
+        {
+          "word": "WAR",
+          "hint": "Armed conflict between countries."
+        },
+        {
+          "word": "ROME",
+          "hint": "Capital of the ancient Roman Empire."
+        },
+        {
+          "word": "QUEEN",
+          "hint": "Female monarch."
+        },
+        {
+          "word": "CASTLE",
+          "hint": "Medieval fortress."
+        },
+        {
+          "word": "HISTORY",
+          "hint": "Study of the past."
+        }
+      ]
+    },
+    {
+      "difficulty": "2",
+      "language": "es",
+      "words": [
+        {
+          "word": "REY",
+          "hint": "Monarca de un reino."
+        },
+        {
+          "word": "PAZ",
+          "hint": "Ausencia de guerra."
+        },
+        {
+          "word": "ROMA",
+          "hint": "Capital del antiguo Imperio Romano."
+        },
+        {
+          "word": "REINA",
+          "hint": "Monarca femenina."
+        },
+        {
+          "word": "CASTILLO",
+          "hint": "Fortaleza medieval."
+        },
+        {
+          "word": "HISTORIA",
+          "hint": "Estudio del pasado."
+        },
+        {
+          "word": "BATALLA",
+          "hint": "Enfrentamiento militar."
+        },
+        {
+          "word": "IMPERIO",
+          "hint": "Territorio gobernado por un emperador."
+        },
+        {
+          "word": "REVOLUCIÓN",
+          "hint": "Cambio radical en la estructura política."
+        },
+        {
+          "word": "CONQUISTA",
+          "hint": "Adquisición de un territorio por la fuerza."
+        },
+        {
+          "word": "DINASTÍA",
+          "hint": "Sucesión de gobernantes de una misma familia."
+        },
+        {
+          "word": "MONARQUÍA",
+          "hint": "Sistema de gobierno con un monarca."
+        },
+        {
+          "word": "ARQUEOLOGÍA",
+          "hint": "Ciencia que estudia las civilizaciones antiguas."
+        }
+      ]
+    },
+    {
+      "difficulty": "2",
+      "language": "en",
+      "words": [
+        {
+          "word": "KING",
+          "hint": "Monarch of a kingdom."
+        },
+        {
+          "word": "PEACE",
+          "hint": "Absence of war."
+        },
+        {
+          "word": "ROME",
+          "hint": "Capital of the ancient Roman Empire."
+        },
+        {
+          "word": "QUEEN",
+          "hint": "Female monarch."
+        },
+        {
+          "word": "CASTLE",
+          "hint": "Medieval fortress."
+        },
+        {
+          "word": "HISTORY",
+          "hint": "Study of the past."
+        },
+        {
+          "word": "BATTLE",
+          "hint": "Military confrontation."
+        },
+        {
+          "word": "EMPIRE",
+          "hint": "Territory ruled by an emperor."
+        },
+        {
+          "word": "REVOLUTION",
+          "hint": "Radical change in political structure."
+        },
+        {
+          "word": "CONQUEST",
+          "hint": "Acquisition of territory by force."
+        },
+        {
+          "word": "DYNASTY",
+          "hint": "Succession of rulers from the same family."
+        },
+        {
+          "word": "MONARCHY",
+          "hint": "System of government with a monarch."
+        },
+        {
+          "word": "ARCHAEOLOGY",
+          "hint": "Science that studies ancient civilizations."
+        }
+      ]
+    },
+    {
+      "difficulty": "3",
+      "language": "es",
+      "words": [
+        {
+          "word": "REY",
+          "hint": "Monarca de un reino."
+        },
+        {
+          "word": "PAZ",
+          "hint": "Ausencia de guerra."
+        },
+        {
+          "word": "ROMA",
+          "hint": "Capital del antiguo Imperio Romano."
+        },
+        {
+          "word": "REINA",
+          "hint": "Monarca femenina."
+        },
+        {
+          "word": "CASTILLO",
+          "hint": "Fortaleza medieval."
+        },
+        {
+          "word": "HISTORIA",
+          "hint": "Estudio del pasado."
+        },
+        {
+          "word": "BATALLA",
+          "hint": "Enfrentamiento militar."
+        },
+        {
+          "word": "IMPERIO",
+          "hint": "Territorio gobernado por un emperador."
+        },
+        {
+          "word": "REVOLUCIÓN",
+          "hint": "Cambio radical en la estructura política."
+        },
+        {
+          "word": "CONQUISTA",
+          "hint": "Adquisición de un territorio por la fuerza."
+        }
+      ]
+    },
+    {
+      "difficulty": "3",
+      "language": "en",
+      "words": [
+        {
+          "word": "KING",
+          "hint": "Monarch of a kingdom."
+        },
+        {
+          "word": "PEACE",
+          "hint": "Absence of war."
+        },
+        {
+          "word": "ROME",
+          "hint": "Capital of the ancient Roman Empire."
+        },
+        {
+          "word": "QUEEN",
+          "hint": "Female monarch."
+        },
+        {
+          "word": "CASTLE",
+          "hint": "Medieval fortress."
+        },
+        {
+          "word": "HISTORY",
+          "hint": "Study of the past."
+        },
+        {
+          "word": "BATTLE",
+          "hint": "Military confrontation."
+        },
+        {
+          "word": "EMPIRE",
+          "hint": "Territory ruled by an emperor."
+        },
+        {
+          "word": "REVOLUTION",
+          "hint": "Radical change in political structure."
+        },
+        {
+          "word": "CONQUEST",
+          "hint": "Acquisition of territory by force."
+        }
+      ]
+    }
+  ],
+  "science": [
+    {
+      "difficulty": "1",
+      "language": "es",
+      "words": [
+        {
+          "word": "SOL",
+          "hint": "Estrella en el centro del sistema solar."
+        },
+        {
+          "word": "LUNA",
+          "hint": "Satélite natural de la Tierra."
+        },
+        {
+          "word": "ATOMO",
+          "hint": "Unidad básica de la materia."
+        },
+        {
+          "word": "CELULA",
+          "hint": "Unidad básica de los seres vivos."
+        },
+        {
+          "word": "AGUA",
+          "hint": "Compuesto químico esencial para la vida."
+        },
+        {
+          "word": "FUEGO",
+          "hint": "Proceso de combustión que produce luz y calor."
+        },
+        {
+          "word": "ENERGIA",
+          "hint": "Capacidad para realizar trabajo."
+        }
+      ]
+    },
+    {
+      "difficulty": "1",
+      "language": "en",
+      "words": [
+        {
+          "word": "SUN",
+          "hint": "Star at the center of the solar system."
+        },
+        {
+          "word": "MOON",
+          "hint": "Natural satellite of the Earth."
+        },
+        {
+          "word": "ATOM",
+          "hint": "Basic unit of matter."
+        },
+        {
+          "word": "CELL",
+          "hint": "Basic unit of living organisms."
+        },
+        {
+          "word": "WATER",
+          "hint": "Chemical compound essential for life."
+        },
+        {
+          "word": "FIRE",
+          "hint": "Combustion process that produces light and heat."
+        },
+        {
+          "word": "ENERGY",
+          "hint": "Capacity to do work."
+        }
+      ]
+    },
+    {
+      "difficulty": "2",
+      "language": "es",
+      "words": [
+        {
+          "word": "SOL",
+          "hint": "Estrella en el centro del sistema solar."
+        },
+        {
+          "word": "LUNA",
+          "hint": "Satélite natural de la Tierra."
+        },
+        {
+          "word": "ATOMO",
+          "hint": "Unidad básica de la materia."
+        },
+        {
+          "word": "CELULA",
+          "hint": "Unidad básica de los seres vivos."
+        },
+        {
+          "word": "AGUA",
+          "hint": "Compuesto químico esencial para la vida."
+        },
+        {
+          "word": "FUEGO",
+          "hint": "Proceso de combustión que produce luz y calor."
+        },
+        {
+          "word": "ENERGIA",
+          "hint": "Capacidad para realizar trabajo."
+        },
+        {
+          "word": "GRAVEDAD",
+          "hint": "Fuerza que atrae los objetos hacia el centro de la Tierra."
+        },
+        {
+          "word": "PLANETA",
+          "hint": "Cuerpo celeste que orbita una estrella."
+        },
+        {
+          "word": "QUIMICA",
+          "hint": "Ciencia que estudia la composición de la materia."
+        },
+        {
+          "word": "BIOLOGIA",
+          "hint": "Ciencia que estudia los seres vivos."
+        },
+        {
+          "word": "FISICA",
+          "hint": "Ciencia que estudia las propiedades de la materia y la energía."
+        },
+        {
+          "word": "ELECTRON",
+          "hint": "Partícula subatómica con carga negativa."
+        }
+      ]
+    },
+    {
+      "difficulty": "2",
+      "language": "en",
+      "words": [
+        {
+          "word": "SUN",
+          "hint": "Star at the center of the solar system."
+        },
+        {
+          "word": "MOON",
+          "hint": "Natural satellite of the Earth."
+        },
+        {
+          "word": "ATOM",
+          "hint": "Basic unit of matter."
+        },
+        {
+          "word": "CELL",
+          "hint": "Basic unit of living organisms."
+        },
+        {
+          "word": "WATER",
+          "hint": "Chemical compound essential for life."
+        },
+        {
+          "word": "FIRE",
+          "hint": "Combustion process that produces light and heat."
+        },
+        {
+          "word": "ENERGY",
+          "hint": "Capacity to do work."
+        },
+        {
+          "word": "GRAVITY",
+          "hint": "Force that attracts objects towards the center of the Earth."
+        },
+        {
+          "word": "PLANET",
+          "hint": "Celestial body orbiting a star."
+        },
+        {
+          "word": "CHEMISTRY",
+          "hint": "Science that studies the composition of matter."
+        },
+        {
+          "word": "BIOLOGY",
+          "hint": "Science that studies living organisms."
+        },
+        {
+          "word": "PHYSICS",
+          "hint": "Science that studies the properties of matter and energy."
+        },
+        {
+          "word": "ELECTRON",
+          "hint": "Subatomic particle with a negative charge."
+        }
+      ]
+    },
+    {
+      "difficulty": "3",
+      "language": "es",
+      "words": [
+        {
+          "word": "SOL",
+          "hint": "Estrella en el centro del sistema solar."
+        },
+        {
+          "word": "LUNA",
+          "hint": "Satélite natural de la Tierra."
+        },
+        {
+          "word": "ATOMO",
+          "hint": "Unidad básica de la materia."
+        },
+        {
+          "word": "CELULA",
+          "hint": "Unidad básica de los seres vivos."
+        },
+        {
+          "word": "AGUA",
+          "hint": "Compuesto químico esencial para la vida."
+        },
+        {
+          "word": "FUEGO",
+          "hint": "Proceso de combustión que produce luz y calor."
+        },
+        {
+          "word": "ENERGIA",
+          "hint": "Capacidad para realizar trabajo."
+        },
+        {
+          "word": "GRAVEDAD",
+          "hint": "Fuerza que atrae los objetos hacia el centro de la Tierra."
+        },
+        {
+          "word": "PLANETA",
+          "hint": "Cuerpo celeste que orbita una estrella."
+        },
+        {
+          "word": "QUIMICA",
+          "hint": "Ciencia que estudia la composición de la materia."
+        }
+      ]
+    },
+    {
+      "difficulty": "3",
+      "language": "en",
+      "words": [
+        {
+          "word": "SUN",
+          "hint": "Star at the center of the solar system."
+        },
+        {
+          "word": "MOON",
+          "hint": "Natural satellite of the Earth."
+        },
+        {
+          "word": "ATOM",
+          "hint": "Basic unit of matter."
+        },
+        {
+          "word": "CELL",
+          "hint": "Basic unit of living organisms."
+        },
+        {
+          "word": "WATER",
+          "hint": "Chemical compound essential for life."
+        },
+        {
+          "word": "FIRE",
+          "hint": "Combustion process that produces light and heat."
+        },
+        {
+          "word": "ENERGY",
+          "hint": "Capacity to do work."
+        },
+        {
+          "word": "GRAVITY",
+          "hint": "Force that attracts objects towards the center of the Earth."
+        },
+        {
+          "word": "PLANET",
+          "hint": "Celestial body orbiting a star."
+        },
+        {
+          "word": "CHEMISTRY",
+          "hint": "Science that studies the composition of matter."
+        }
+      ]
+    }
+  ]
+}

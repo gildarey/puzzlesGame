@@ -18,7 +18,7 @@ const openaiApiUrl = process.env.OPENAI_API_URL;
 const openaiModel = process.env.OPENAI_MODEL;
 
 // Define the path to the JSON database file
-const jsonFilePath = path.join(__dirname, 'data', 'tempDatabase.json');
+const jsonFilePath = path.join(__dirname, 'data', 'crosswordDatabase.json');
 
 app.use(cors());
 app.use(express.json());
@@ -32,7 +32,7 @@ app.listen(PORT, () => {
 
 //Too slow.... not in use
 app.post('/api/generateWords', async (req, res) => {
-    const { language, prompTopic, shortWords, mediumWords, longWords, boardDimensions } = req.body;
+    const {language, prompTopic, shortWords, mediumWords, longWords, boardDimensions} = req.body;
 
     try {
         let prompt = generatePrompt(language, prompTopic, shortWords, mediumWords, longWords, boardDimensions);
@@ -42,10 +42,10 @@ app.post('/api/generateWords', async (req, res) => {
             {
                 model: openaiModel,
                 messages: [{
-                        role: 'user',
-                        content: prompt
-                    }],
-                },
+                    role: 'user',
+                    content: prompt
+                }],
+            },
             {
                 headers: {
                     'Authorization': `Bearer ${openaiApiKey}`,
@@ -67,22 +67,22 @@ app.post('/api/generateWords', async (req, res) => {
     } catch (error) {
         console.error('Error generating words from OpenAI:', error.toString());
         console.error('res from OpenAI:', error.response.data);
-        res.status(500).json({ message: 'Error creating case', error: error.toString() });
+        res.status(500).json({message: 'Error creating case', error: error.toString()});
     }
 });
 
 //TODO: Improve this method
 app.get('/api/getWords', (req, res) => {
+    const {topic, difficulty, language} = req.query;
+
+    console.log('Getting words by criteria:', topic, difficulty, language);
+
     try {
-        const jsonData = readJsonFile();
-        if (jsonData) {
-            res.status(200).json(jsonData);
-        } else {
-            res.status(500).json({ message: 'Error reading JSON data' });
-        }
+        const words = getWordsByCriteria(topic, difficulty, language);
+        res.status(200).json({words});
     } catch (error) {
-        console.error('Error getting words:', error);
-        res.status(500).json({ message: 'Internal server error' });
+        console.error('Error getting words by criteria:', error);
+        res.status(500).json({message: error.message});
     }
 });
 
@@ -101,6 +101,26 @@ const generatePrompt = (language, topic, shortWords, mediumWords, longWords, boa
     prompt += "- Output as a JSON object with 'word' and 'hint'. Example: [{ word: 'EXAMPLE', hint: 'This is an example' }]. RETURN THIS FORMAT ONLY, do not add comments or additional text, just the JSON LIST.\n";
 
     return prompt;
+};
+
+const getWordsByCriteria = (topic, difficulty, language) => {
+    const jsonData = readJsonFile();
+    if (!jsonData) {
+        console.error('Error reading JSON data');
+        // throw new Error('Error reading JSON data');
+    }
+
+    const topicData = jsonData[topic];
+    if (!topicData) {
+        console.error(`Topic ${topic} not found`);
+        // throw new Error(`Topic ${topic} not found`);
+    }
+
+    const filteredWords = topicData.filter(item =>
+        item.difficulty === difficulty && item.language === language
+    );
+
+    return filteredWords.length > 0 ? filteredWords[0].words : [];
 };
 
 const readJsonFile = () => {
