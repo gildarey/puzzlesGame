@@ -20,7 +20,10 @@ const openaiModel = process.env.OPENAI_MODEL;
 // Define the path to the JSON database file
 const jsonFilePath = path.join(__dirname, 'data', 'crosswordDatabase.json');
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://puzzles-game-bba18a4d88d8.herokuapp.com'  // your frontend URL
+}));
+
 app.use(express.json());
 
 // configRoutes
