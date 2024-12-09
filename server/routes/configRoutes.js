@@ -1,6 +1,6 @@
 const express = require('express');
 const { getConfig } = require('../controllers/configControllers');
-const { getWordsByCriteria } = require('../utils/getWords');
+const { getWordsByCriteria } = require('../controllers/getWords');
 const router = express.Router();
 
 // Route to get configuration
