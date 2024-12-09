@@ -78,21 +78,6 @@ app.post('/api/generateWords', async (req, res) => {
     }
 });
 
-//TODO: Improve this method
-// app.get('/api/getWords', (req, res) => {
-//     const {topic, difficulty, language} = req.query;
-//
-//     console.log('Getting words by criteria:', topic, difficulty, language);
-//
-//     try {
-//         const words = getWordsByCriteria(topic, difficulty, language);
-//         res.status(200).json({words});
-//     } catch (error) {
-//         console.error('Error getting words by criteria:', error);
-//         res.status(500).json({message: error.message});
-//     }
-// });
-
 //aux methods
 const generatePrompt = (language, topic, shortWords, mediumWords, longWords, boardDimensions) => {
     let prompt = "You are helping to create a crossword puzzle. Generate a list of words based on the following criteria:\n";
@@ -108,35 +93,4 @@ const generatePrompt = (language, topic, shortWords, mediumWords, longWords, boa
     prompt += "- Output as a JSON object with 'word' and 'hint'. Example: [{ word: 'EXAMPLE', hint: 'This is an example' }]. RETURN THIS FORMAT ONLY, do not add comments or additional text, just the JSON LIST.\n";
 
     return prompt;
-};
-
-const getWordsByCriteria = (topic, difficulty, language) => {
-    const jsonData = readJsonFile();
-    if (!jsonData) {
-        console.error('Error reading JSON data');
-        // throw new Error('Error reading JSON data');
-    }
-
-    const topicData = jsonData[topic];
-    if (!topicData) {
-        console.error(`Topic ${topic} not found`);
-        // throw new Error(`Topic ${topic} not found`);
-    }
-
-    const filteredWords = topicData.filter(item =>
-        item.difficulty === difficulty && item.language === language
-    );
-
-    return filteredWords.length > 0 ? filteredWords[0].words : [];
-};
-
-const readJsonFile = () => {
-    try {
-        const data = fs.readFileSync(jsonFilePath, 'utf8');
-        const jsonData = JSON.parse(data);
-        return jsonData;
-    } catch (err) {
-        console.error('Error reading or parsing JSON file:', err);
-        return null;
-    }
 };
