@@ -36,7 +36,7 @@ const Board = ({t, settings, onWordComplete}) => {
             const timeout = setTimeout(() => {
                 setError('Error: Board generation timed out');
                 setIsLoading(false);
-            }, 10000); // 10 seconds timeout
+            }, 20000); // 20 seconds timeout
 
             try {
                 const {

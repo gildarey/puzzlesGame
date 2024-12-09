@@ -82,7 +82,7 @@ export const generateBoard = async (language, difficulty, topic) => {
             initialData.push(word);
         }
 
-        // console.log('initialData:', initialData);
+        console.log('initialData:', initialData);
         return {initialData, boardDimensions, density};
 
     } catch (error) {
