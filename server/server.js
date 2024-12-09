@@ -79,19 +79,19 @@ app.post('/api/generateWords', async (req, res) => {
 });
 
 //TODO: Improve this method
-app.get('/api/getWords', (req, res) => {
-    const {topic, difficulty, language} = req.query;
-
-    console.log('Getting words by criteria:', topic, difficulty, language);
-
-    try {
-        const words = getWordsByCriteria(topic, difficulty, language);
-        res.status(200).json({words});
-    } catch (error) {
-        console.error('Error getting words by criteria:', error);
-        res.status(500).json({message: error.message});
-    }
-});
+// app.get('/api/getWords', (req, res) => {
+//     const {topic, difficulty, language} = req.query;
+//
+//     console.log('Getting words by criteria:', topic, difficulty, language);
+//
+//     try {
+//         const words = getWordsByCriteria(topic, difficulty, language);
+//         res.status(200).json({words});
+//     } catch (error) {
+//         console.error('Error getting words by criteria:', error);
+//         res.status(500).json({message: error.message});
+//     }
+// });
 
 //aux methods
 const generatePrompt = (language, topic, shortWords, mediumWords, longWords, boardDimensions) => {

@@ -57,7 +57,7 @@ export const generateBoard = async (language, difficulty, topic) => {
 
     try {
         // Make a GET request to the backend to fetch words
-        const response = await axios.get(`${apiURL}/api/getWords`, {
+        const response = await axios.get(`https://puzzles-game-bba18a4d88d8.herokuapp.com/api/getWords`, {
             params: {
                 topic: topic,
                 difficulty: difficulty,
