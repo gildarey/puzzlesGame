@@ -29,6 +29,9 @@ const Board = ({t, settings, onWordComplete}) => {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
 
+    /**
+     * Fetch the initial data for the crossword puzzle board based on the settings.
+     */
     useEffect(() => {
         const fetchBoardData = async () => {
             setIsLoading(true);
@@ -91,6 +94,14 @@ const Board = ({t, settings, onWordComplete}) => {
         }
     }, [lastChangedCell]);
 
+
+    /**
+     * Generates the initial grid for the crossword puzzle.
+     * @param rows - The number of rows in the grid.
+     * @param cols  - The number of columns in the grid.
+     * @param initialData  - The initial data containing words and hints.
+     * @returns {{updatedGrid: *[], placedWords: (*|Array|boolean)}}
+     */
     const createInitialGrid = (rows, cols, initialData) => {
         const defaultGrid = Array.from({length: rows}, () =>
             Array.from({length: cols}, () => ({
@@ -119,6 +130,15 @@ const Board = ({t, settings, onWordComplete}) => {
         return array.sort(() => Math.random() - 0.5);
     };
 
+    /**
+     * Checks if a word can be placed in the grid at the specified position and direction.
+     * @param grid - The current grid state.
+     * @param word - The word to place.
+     * @param row  - The row position to place the word.
+     * @param col - The column position to place the word.
+     * @param direction - The direction to place the word ('h' for horizontal, 'v' for vertical).
+     * @returns {boolean} - True if the word can be placed, false otherwise.
+     */
     const canPlaceWord = (grid, word, row, col, direction) => {
         const N = grid.length;
         const M = grid[0].length;
@@ -154,6 +174,15 @@ const Board = ({t, settings, onWordComplete}) => {
         return true;
     };
 
+    /**
+     * Places a word in the grid at the specified position and direction.
+     * @param grid - The current grid state.
+     * @param word - The word to place.
+     * @param row - The row position to place the word.
+     * @param col - The column position to place the word.
+     * @param direction - The direction to place the word ('h' for horizontal, 'v' for vertical).
+     * @returns {*} - The updated grid with the word placed.
+     */
     const placeWord = (grid, word, row, col, direction) => {
         const newGrid = grid.map(row => row.slice());
 
@@ -423,12 +452,12 @@ const Board = ({t, settings, onWordComplete}) => {
     }, [grid]);
 
     const resetBoard = () => {
+        // Reset the grid to the initial state
         const {updatedGrid, placedWords} = createInitialGrid(rows, cols, initialData);
         setGrid(updatedGrid);
         setSolutionGrid(placedWords);
         setTimer(0);
         setIsTimerRunning(false);
-        printBoard(placedWords);
     };
 
     const revealLetter = () => {
@@ -436,7 +465,9 @@ const Board = ({t, settings, onWordComplete}) => {
             const {row, col} = selectedCell;
             const newGrid = grid.map((r, rowIndex) =>
                 r.map((cell, colIndex) => {
+                    // Check if the cell is not frozen and does not contain a letter
                     if (rowIndex === row && colIndex === col && !cell.frozen && !cell.letter) {
+                        // Reveal the letter from the solution grid
                         return {
                             ...cell,
                             letter: solutionGrid[rowIndex][colIndex].letter,
@@ -459,6 +490,7 @@ const Board = ({t, settings, onWordComplete}) => {
                 const {startPosition, wordDirection, wordLength} = cell;
                 const {row: startRow, col: startCol} = startPosition;
 
+                //TODO: Refactor this into a separate function, maybe use revealLetter function
                 const newGrid = grid.map((r, rowIndex) =>
                     r.map((cell, colIndex) => {
                         if (wordDirection === 'h' && rowIndex === startRow && colIndex >= startCol && colIndex < startCol + wordLength) {
@@ -490,6 +522,7 @@ const Board = ({t, settings, onWordComplete}) => {
                 completed: !cell.frozen
             }))
         );
+        // Set the grid to the solution grid
         setGrid(newGrid);
         setIsTimerRunning(false);
     };
@@ -502,6 +535,7 @@ const Board = ({t, settings, onWordComplete}) => {
         return <div className="error">{error}</div>;
     }
 
+    // For styling the board, calculate the cell size and board width based on the number of rows and columns
     const maxBoardSize = Math.min(window.innerWidth, window.innerHeight) * 0.5;
     const cellSize = Math.min(60, maxBoardSize / Math.max(rows, cols));
     const boardWidth = cols * cellSize + (cols - 1) * 2;

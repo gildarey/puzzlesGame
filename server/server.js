@@ -6,7 +6,6 @@ const configRoutes = require('./routes/configRoutes'); // routes
 const fs = require('fs');
 const path = require('path');
 
-const bodyParser = require('body-parser');
 const axios = require('axios');
 
 const app = express();
@@ -16,9 +15,6 @@ const HOSTNAME = 'localhost';
 const openaiApiKey = process.env.OPENAI_API_KEY;
 const openaiApiUrl = process.env.OPENAI_API_URL;
 const openaiModel = process.env.OPENAI_MODEL;
-
-// Define the path to the JSON database file
-const jsonFilePath = path.join(__dirname, 'data', 'crosswordDatabase.json');
 
 app.use(cors());
 

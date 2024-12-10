@@ -4,18 +4,6 @@ const path = require('path');
 // Define the path to the JSON database file
 const jsonFilePath = path.join(__dirname, '../data/crosswordDatabase.json');
 
-// Function to read JSON file
-const readJsonFile = () => {
-    try {
-        const data = fs.readFileSync(jsonFilePath, 'utf8');
-        const jsonData = JSON.parse(data);
-        return jsonData;
-    } catch (err) {
-        console.error('Error reading or parsing JSON file:', err);
-        return null;
-    }
-};
-
 // Function to get words by criteria
 const getWordsByCriteria = (topic, difficulty, language) => {
     const jsonData = readJsonFile();
@@ -35,6 +23,19 @@ const getWordsByCriteria = (topic, difficulty, language) => {
     );
 
     return filteredWords.length > 0 ? filteredWords[0].words : [];
+};
+
+
+//aux methods
+// Function to read JSON file
+const readJsonFile = () => {
+    try {
+        const data = fs.readFileSync(jsonFilePath, 'utf8');
+        return JSON.parse(data);
+    } catch (err) {
+        console.error('Error reading or parsing JSON file:', err);
+        return null;
+    }
 };
 
 module.exports = { getWordsByCriteria };

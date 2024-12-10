@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Config from './components/Config';
 import Board from './components/Board';
+import Footer from './components/Footer';
 import {useTranslation} from 'react-i18next';
 import './assets/global.css';
 import './i18n/i18n';
@@ -19,6 +20,7 @@ function App() {
             <h2 className="app-subtitle">{t('subtitle')}</h2>
             <Config t={t} onSettingsChange={handleSettingsChange}/>
             <Board t={t} settings={settings}/>
+            <Footer />
         </div>
     );
 }
