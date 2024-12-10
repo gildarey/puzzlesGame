@@ -70,7 +70,7 @@ export const generateBoard = async (language, difficulty, topic) => {
         if (keys.length === 0) {
             throw new Error('No words returned from backend');
         }
-        // Select a random key
+        // Select a random key, only works for different options, for now, is always the same option per topic/difficulty/language
         const randomKey = keys[Math.floor(Math.random() * keys.length)];
         const wordsArray = generatedWords[randomKey];
         if (wordsArray.length === 0) {
@@ -87,6 +87,6 @@ export const generateBoard = async (language, difficulty, topic) => {
 
     } catch (error) {
         console.error('Error fetching words from backend:', error);
-        return {initialData: [], boardDimensions, density}; // Return an empty array or handle the error as needed
+        return {initialData: [], boardDimensions, density}; // Return an empty array
     }
 };

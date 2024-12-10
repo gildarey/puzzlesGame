@@ -1,0 +1,26 @@
+{
+  "name": "puzzlesgame",
+  "version": "1.0.0",
+  "description": "Puzzles is a simple crossword game designed as a learning project to explore **React** and **Node.js**. The game is still a work in progress, but it features interactive gameplay and customizable options for themes and challenges.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install --prefix server && npm install --prefix client && npm run build --prefix client && node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gildarey/puzzlesGame.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gildarey/puzzlesGame/issues"
+  },
+  "homepage": "https://github.com/gildarey/puzzlesGame#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}

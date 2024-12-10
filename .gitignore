@@ -12,3 +12,7 @@ Thumbs.db
 # Dependencias específicas de IDE
 .vscode/
 .idea/
+
+# Carpeta de compilación
+/build
+
